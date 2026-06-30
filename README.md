@@ -19,10 +19,8 @@ HTTP server.
 ## Demo
 
 <div align="center">
-  <a href="https://github.com/luke-fairbanks/quizlet-local/blob/main/assets/demo.mp4">
-    <img src="assets/demo-poster.jpg" alt="Watch the QuizletLocal demo" width="760" />
-  </a>
-  <p><em>~37s walkthrough — import a set with the bookmarklet, then study it with Flashcards, Learn, Quiz &amp; Match. (Click to play.)</em></p>
+  <img src="assets/demo.gif" alt="QuizletLocal demo" width="640" />
+  <p><em>~37s walkthrough — import a set with the bookmarklet, then study it with Flashcards, Learn, Quiz &amp; Match. (<a href="https://github.com/luke-fairbanks/quizlet-local/blob/main/assets/demo.mp4">full-resolution video</a>)</em></p>
 </div>
 
 ## Run it
