@@ -1,10 +1,20 @@
-# QuizletLocal
+<div align="center">
+  <img src="assets/logo.svg" alt="QuizletLocal logo" width="104" height="104" />
+  <h1>QuizletLocal</h1>
+  <p><strong>Import your Quizlet sets and study them locally — ad-free.</strong></p>
+  <p>Flashcards · Learn · Quiz · Match · List — with per-card learning progress and an inline card editor.</p>
+  <p>
+    <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-6d54e0"></a>
+    <img alt="React 18" src="https://img.shields.io/badge/React-18-149eca?logo=react&logoColor=white">
+    <img alt="Radix UI" src="https://img.shields.io/badge/Radix_UI-Themes-8b5cf6">
+    <img alt="Zero-dependency server" src="https://img.shields.io/badge/server-zero--dependency-22c55e">
+  </p>
+</div>
 
-A local, ad-free app for saving Quizlet sets and studying them. No accounts, no
-external services — sets are stored in `data/sets.json` on your machine.
-
-**Stack:** React 18 + [Radix Themes](https://www.radix-ui.com/) + framer-motion
-(frontend), with a zero-dependency Node HTTP server as the API/storage backend.
+No accounts, no external services — your sets are stored locally in
+`data/sets.json` on your machine. Built with React 18 + [Radix
+Themes](https://www.radix-ui.com/) + framer-motion over a zero-dependency Node
+HTTP server.
 
 ## Run it
 
