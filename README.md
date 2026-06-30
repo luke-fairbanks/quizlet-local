@@ -16,6 +16,15 @@ No accounts, no external services — your sets are stored locally in
 Themes](https://www.radix-ui.com/) + framer-motion over a zero-dependency Node
 HTTP server.
 
+## Demo
+
+<div align="center">
+  <a href="https://github.com/luke-fairbanks/quizlet-local/blob/main/assets/demo.mp4">
+    <img src="assets/demo-poster.jpg" alt="Watch the QuizletLocal demo" width="760" />
+  </a>
+  <p><em>~37s walkthrough — import a set with the bookmarklet, then study it with Flashcards, Learn, Quiz &amp; Match. (Click to play.)</em></p>
+</div>
+
 ## Run it
 
 Just one thing to run — a single local server on port 4321 serves both the app
