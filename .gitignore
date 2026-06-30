@@ -1,0 +1,19 @@
+# dependencies & build output
+node_modules/
+dist/
+
+# local runtime + personal data — never publish imported sets (they belong to
+# their original Quizlet creators)
+data/
+server.log
+.server.pid
+
+# generated convenience copy of the bookmarklet (src/bookmarklet.js is committed)
+bookmarklet.min.txt
+
+# local-only tooling / archives
+harbor.json
+_legacy_vanilla/
+
+# macOS
+.DS_Store

@@ -1,0 +1,93 @@
+/* Custom tokens + polish layered on top of Radix Themes.
+   Keep this lean — Radix Themes handles most styling via its own variables. */
+
+:root {
+  --app-max-width: 820px;
+  --ql-bg-gradient: radial-gradient(
+      1200px 600px at 50% -10%,
+      color-mix(in oklab, var(--indigo-9) 22%, transparent),
+      transparent 60%
+    ),
+    var(--color-background);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--ql-bg-gradient);
+  background-attachment: fixed;
+}
+
+/* Smooth, app-wide motion defaults */
+@media (prefers-reduced-motion: no-preference) {
+  .radix-themes {
+    --ql-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+/* The flashcard 3D flip. The inner element is what framer-motion rotates. */
+.flashcard-scene {
+  perspective: 1800px;
+}
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(20px, 5vw, 48px);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius-5);
+  overflow: auto;
+}
+.flashcard-face--back {
+  transform: rotateY(180deg);
+}
+
+/* Subtle hover lift used on interactive cards */
+.lift {
+  transition: transform 0.18s var(--ql-ease, ease), box-shadow 0.18s ease;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .lift:hover {
+    transform: translateY(-2px);
+    will-change: transform;
+  }
+}
+
+/* Make the draggable bookmarklet look grabbable */
+.bookmarklet-pill {
+  cursor: grab;
+  user-select: none;
+  text-decoration: none;
+}
+.bookmarklet-pill:active {
+  cursor: grabbing;
+}
+
+/* Hide scrollbars inside flashcard faces but keep scrollability */
+.flashcard-face::-webkit-scrollbar {
+  width: 6px;
+}
+.flashcard-face::-webkit-scrollbar-thumb {
+  background: var(--gray-a5);
+  border-radius: 999px;
+}
+
+/* Full-height app shell */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
